@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "photoapi",
+      "composeLaunchUrl": "{Scheme}://0.0.0.0:{ServicePort}/swagger",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "photoapi": "StartDebugging",
+        "photosdb": "StartWithoutDebugging"
+      }
+    }
+  }
+}

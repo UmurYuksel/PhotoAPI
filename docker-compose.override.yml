@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  photoapi:
+    container_name: photoapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    restart: on-failure
+    ports:
+      - "8002:80"
+    depends_on:
+      - photosdb
+    volumes:
+      - photovol:/app
+      - ${APPDATA}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
+      - ${APPDATA}/.aspnet/https:/root/.aspnet/https/
+
+  photosdb:
+    container_name: photosdbb
+    environment:
+      - SA_PASSWORD=TestP@ssw0rd
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+    restart: always
+    ports:
+       - "1401:1433" 
+
+volumes:  
+  photovol: 
