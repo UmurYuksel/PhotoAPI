@@ -8,15 +8,12 @@ This readme includes quick installation info and technical details for better us
 docker-compose and docker-engine versions may differ on your local machine, due to this reason, instead of letting visual studio to automatically compose the files, 
 please follow the steps below:
 
-  Important: pSteps to reproduce in case if the visual studio already composed the files:
-       -> Remove the container by using your docker 
-
--> Open the project in Viusal Studio 
--> Right Click on docker-compose 
--> Select "Open in Terminal" 
--> Type "docker-compose up" and hit the enter. (or docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d )
--> Now the contanier should be up and running. 
--> API will try broadcast itself through the port of :8002, If you go to this url: http://localhost:8002/index.html you access to My API documentation and test the application with swagger
+     - Open the project in Viusal Studio 
+     - Right Click on docker-compose 
+     - Select "Open in Terminal" 
+     - Type "docker-compose up" and hit the enter. (or docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d )
+     - Now the contanier should be up and running. 
+     - API will try broadcast itself through the port of :8002, If you go to this url: http://localhost:8002/index.html you can access to My API documentation and test the   application with swagger
 
 Important: if the visual studio already composed the files in the moment when you opened the project with VS, Please remove the container by using your docker dekstop and reproduce the steps above.
 
