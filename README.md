@@ -1,5 +1,4 @@
 # PhotoAPI
-For Detailed Information about the project please read the README file in the directory
 
 This readme includes quick installation info and technical details for better user experience.
 
