@@ -1,4 +1,4 @@
-# PhotoAPI
+# PhotoAPI - IIASA Full-Stack Challenge
 
 This readme includes quick installation info and technical details for better user experience.
 
